@@ -1,7 +1,7 @@
 // Service Worker: speichert alle Dateien, damit die Meme Maschine auch offline läuft.
 // Die Seite selbst wird immer frisch geladen (wenn online). Bei neuen/geänderten
 // Sounds oder Bildern die Versionsnummer erhöhen, dann wird alles neu gespeichert.
-const CACHE = 'mememaschine-v3';
+const CACHE = 'mememaschine-v4';
 
 const FILES = [
   './',
@@ -30,6 +30,17 @@ const FILES = [
   'audio/Kranpätze.mp4',
   'audio/Warum.mp4',
   'audio/was machen sachen.mp4',
+  'audio/Denkmal der dummheit.mp4',
+  'audio/whait a minute.mp4',
+  'audio/Nice.mp4',
+  'audio/Super.mp4',
+  'audio/Unfall.mp4',
+  'audio/der Gäreät.mp4',
+  'audio/nein doch oh.mp4',
+  'audio/Fahrräder.mp4',
+  'audio/forca ist runtergeladen.mp4',
+  'audio/halt stop.mp4',
+  'audio/hünhen mit reis.mp4',
   'audio/Ich muss raus.mp4',
 ];
 

@@ -94,6 +94,9 @@
       grid-template-columns: repeat(4, 1fr);
       gap: 12px;
     }
+    @media (min-width: 640px) {
+      .grid { grid-template-columns: repeat(5, 1fr); }
+    }
 
     .tile {
       --h: 240;
@@ -414,7 +417,7 @@
     </main>
 
     <footer>
-      <span class="kbd-hint">Tasten: 1–4 · Q–R · A–F · Y–V · G–K · Leertaste = Zufall · Esc = Stopp</span>
+      <span class="kbd-hint">Tasten stehen oben links auf den Kacheln · Leertaste = Zufall · Esc = Stopp</span>
     </footer>
   </div>
 
@@ -482,6 +485,17 @@
       { label: 'Kranpätze',        file: 'audio/Kranpätze.mp4',                      emoji: '🏗️', h: 50  },
       { label: 'Warum',            file: 'audio/Warum.mp4',                          emoji: '❓', h: 260 },
       { label: 'Was machen Sachen',file: 'audio/was machen sachen.mp4',              emoji: '🤔', h: 130 },
+      { label: 'Denkmal der Dummheit', file: 'audio/Denkmal der dummheit.mp4',       emoji: '🗿', h: 200 },
+      { label: 'Wait a minute',    file: 'audio/whait a minute.mp4',                 emoji: '⏱️', h: 285 },
+      { label: 'Nice',             file: 'audio/Nice.mp4',                           emoji: '😎', h: 160 },
+      { label: 'Super',            file: 'audio/Super.mp4',                          emoji: '👍', h: 95  },
+      { label: 'Unfall',           file: 'audio/Unfall.mp4',                         emoji: '💥', h: 5   },
+      { label: 'Der Gäreät',       file: 'audio/der Gäreät.mp4',                     emoji: '📟', h: 230 },
+      { label: 'Nein doch oh',     file: 'audio/nein doch oh.mp4',                   emoji: '😧', h: 335 },
+      { label: 'Fahrräder',        file: 'audio/Fahrräder.mp4',                      emoji: '🚲', h: 140 },
+      { label: 'Forca ist runtergeladen', file: 'audio/forca ist runtergeladen.mp4', emoji: '💾', h: 210 },
+      { label: 'Halt stop',        file: 'audio/halt stop.mp4',                      emoji: '🛑', h: 355 },
+      { label: 'Hünhen mit Reis',  file: 'audio/hünhen mit reis.mp4',                emoji: '🍚', h: 40  },
     ];
 
     // 🤫 Easter Egg: kommt NUR über den Zufalls-Button.
@@ -494,8 +508,11 @@
       'KeyA',   'KeyS',   'KeyD',   'KeyF',
       'KeyZ',   'KeyX',   'KeyC',   'KeyV',   // KeyZ = „Y“ auf deutscher Tastatur
       'KeyG',   'KeyH',   'KeyJ',   'KeyK',
+      'Digit5', 'Digit6', 'Digit7', 'Digit8', 'Digit9', 'Digit0',
+      'KeyT',   'KeyU',   'KeyI',   'KeyO',   'KeyP',
     ];
-    const KEY_LABELS = ['1','2','3','4','Q','W','E','R','A','S','D','F','Y','X','C','V','G','H','J','K'];
+    const KEY_LABELS = ['1','2','3','4','Q','W','E','R','A','S','D','F','Y','X','C','V','G','H','J','K',
+                        '5','6','7','8','9','0','T','U','I','O','P'];
 
     // ---------- Einstellungen (mit Fallback, falls localStorage blockiert ist) ----------
     const DEFAULTS = { volume: 1, overlap: false, showKeys: true, haptics: true, secretFound: false };
